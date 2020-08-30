@@ -1,0 +1,20 @@
+body {
+	background-color: #00ffff;
+	 background: linear-gradient(to right, #b0c4de, #d6ebff);
+}
+.cont{
+	background-color: #fff;
+	margin: 5px;
+	max-width: 400px;
+	padding: 10px 5px ;
+	box-shadow: 5px 5px 2px 0px #66666680;
+	border-radius: 5px;
+}
+
+h1 {
+	margin: 50px 0 50px 0;
+}
+#sticky-footer {
+  flex-shrink: none;
+  margin-top: 145px;
+}

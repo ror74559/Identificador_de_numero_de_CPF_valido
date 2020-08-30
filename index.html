@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gerador de CPF</title>
+    
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+ 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    
+  </head>
+
+  <body>
+   
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="text-center">
+          <h1>Analisador de CPF</h1>
+
+           
+          <div class="row">
+
+            <div class="col-sm-4 col-md-4 col-xl-4 cont">
+              <h3>Gerador de CPF aleatório</h3>
+                <p>Clique em GERAR para gerar um número de cpf válido de acordo com as regras de formação dos dois últimos dígitos(dígitos verificadores). </p>
+                 <input type="text" id="mostraCpf" disabled="true">
+                 <input type="button" id="geraCpf" value=" GERAR">
+
+            </div>
+             <div class="col-sm-4 col-md-4 col-xl-4 cont">
+                 <h3>Verificador de validade de CPF</h3>
+                 <p>Digite um número de CPF(11 dígitos) para verificar a validade de acordo com os dois últimos dígitos(dígitos verificadores) </p>
+                 <input type="number" id="verificaCpf">
+                 <input type="button" id="checkCpf" value="VERIFICAR"> 
+                 <h4 id="showCheck"></h4>
+            </div>
+             <div class="col-sm-4 col-md-4 col-xl-4 cont">
+                <h3>Dígitos verificadores</h3>
+                <p>Digite nove números aleatórios e você terá como resposta um número, válido para ser um CPF, com os dois dígitos verificadores calculados de acordo com a regra de formação de um CPF.</p>
+                 <input type="number" id="calculaCpf">
+                 <input type="button" id="gera2dig" value="GERAR">
+                  <h4 id="cpf2dig"></h4> 
+            </div>
+            
+
+          </div>
+         <p> Suposto número de CPF gerado é aleatório e não significa que o mesmo seja de alguma pessoa. Esse site foi feito apenas para estudo.</p>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Rafael Ribeiro</small>
+        </div>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script  src="main.js"  type="module"></script>
+  
+  
+
+</html>
