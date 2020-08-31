@@ -12,9 +12,17 @@ export default function twoDigits(){
 
 	if(calculaCpf.value.length == 9){
 
+		function del(){
+
+			showCpf.innerHTML = ''
+
+		}
+
 		let cpf = calculaCpf.value.split('')
 
 		showCpf.innerHTML = showResult(cpf)
+
+		setTimeout(del,3500);
 
 	} else{
 

@@ -15,6 +15,11 @@ export default function checkCpf(){
 			alert('Insira 11 dígitos(apenas os números)')
 
 		}else{
+		function del(){
+
+			showCheck.innerHTML = ''
+
+		}
 
 		let inic = verificaCpf.value.split('')
 
@@ -25,6 +30,10 @@ export default function checkCpf(){
 		let dig2 = generateDigits(inic,1,10)
 
 		showCheck.innerHTML = result(dig1,dig2,digs)
+
+		setTimeout(del,3500);
+
+
 
 
 		}
